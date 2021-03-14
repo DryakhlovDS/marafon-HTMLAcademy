@@ -13,17 +13,20 @@
         <div class="header__inner">
           <div class="header__logo">
             <img src="img/logo.png" alt="logo" />
-            <a href="#noscroll">scandi</a>
+            <a href="#home">scandi</a>
           </div>
           <nav class="nav">
-            <div class="menu">Menu</div>
+            <div class="menu active">
+              <div class="menu__icon"></div>
+              <span>Menu</span>
+            </div>
             <ul class="nav__container">
-              <li class="nav__link"><a href="#noscroll">О компании</a></li>
-              <li class="nav__link"><a href="#noscroll">Портфолио</a></li>
-              <li class="nav__link"><a href="#noscroll">Команда</a></li>
-              <li class="nav__link"><a href="#noscroll">Как мы работаем</a></li>
-              <li class="nav__link"><a href="#noscroll">Отзывы клиентов</a></li>
-              <li class="nav__link"><a href="#noscroll">Оставить заявку</a></li>
+              <li class="nav__link"><a href="#about">О компании</a></li>
+              <li class="nav__link"><a href="#works">Портфолио</a></li>
+              <li class="nav__link"><a href="#team">Команда</a></li>
+              <li class="nav__link"><a href="#make">Как мы работаем</a></li>
+              <li class="nav__link"><a href="#reviews">Отзывы клиентов</a></li>
+              <li class="nav__link"><a href="#callback">Оставить заявку</a></li>
               <li class="nav__link">
                 <a href="#noscroll"><span>+7 (981) 857-46-24</span></a>
               </li>
@@ -33,7 +36,7 @@
       </div>
     </header>
     <main>
-      <section class="intro">
+      <section class="intro" id="home">
         <div class="container">
           <div class="intro__inner">
             <h2 class="intro__title">Поможем сделать вашу квартиру уютнее</h2>
@@ -41,15 +44,13 @@
               Подбираем текстиль, мебель и аксессуары под Ваш интерьер, находим
               магазины и помогаем организовать доставку.
             </p>
-            <button class="intro__btn">
-              <a href="#" target="_blank" rel="noopener noreferrer"
-                >Оставить заявку</a
-              >
-            </button>
+            <a href="#callback" target="_blank" class="intro__btn">
+              <span>Оставить заявку</span>
+            </a>
           </div>
         </div>
       </section>
-      <section class="section about">
+      <section class="section about" id="about">
         <h2 class="section__title">о нас</h2>
         <div class="container">
           <div class="about__inner">
@@ -90,7 +91,7 @@
           </div>
         </div>
       </section>
-      <section class="section works">
+      <section class="section works" id="works">
         <div class="container">
           <h2 class="section__title section__title_left">наши работы</h2>
           <div class="gallery">
@@ -106,7 +107,7 @@
                 </p>
               </div>
             </div>
-            <div class="gallery__item large">
+            <div class="gallery__item">
               <img src="img/work-2.png" alt="Кухня" />
               <div class="gallery__description">
                 <h4 class="gallery__name">Кухня 20 кв.м.</h4>
@@ -148,7 +149,7 @@
           </div>
         </div>
       </section>
-      <section class="section team">
+      <section class="section team" id="team">
         <h2 class="section__title">команда</h2>
         <div class="container">
           <div class="team__cards">
@@ -161,7 +162,7 @@
                 красивой и уютной.
               </p>
             </div>
-            <div class="card">
+            <div class="card" id="make">
               <h3 class="card__title">Саша</h3>
               <img class="card__image" src="img/team-2.png" alt="Фото Саши" />
               <p class="card__description">
@@ -216,7 +217,7 @@
           </div>
         </div>
       </section>
-      <section class="section reviews">
+      <section class="section reviews" id="reviews">
         <h2 class="section__title">отзывы</h2>
         <div class="reviews__inner">
           <div class="prev">
@@ -250,7 +251,7 @@
           </div>
         </div>
       </section>
-      <div class="section callback">
+      <section class="section callback" id="callback">
         <div class="container">
           <div class="callback__inner">
             <div class="callback__form">
@@ -263,15 +264,14 @@
               </p>
               <form name="callback">
                 <fieldset>
-                  <input type="text" id="name" required />
+                  <input type="text" id="name" name="name" required />
                   <label for="name">Ваше имя</label>
                 </fieldset>
                 <fieldset>
-                  <input type="tel" id="phone" required />
+                  <input type="tel" id="phone" name="phone" required />
                   <label for="phone">Введите телефон</label>
                 </fieldset>
-
-                <button type="submit">Оставить заявку</button>
+                <button type="submit"><span>Оставить заявку</span></button>
               </form>
             </div>
             <div class="callback__map">
@@ -279,18 +279,20 @@
             </div>
           </div>
         </div>
-      </div>
-      <footer class="footer">
-        <div class="container">
-          <div class="footer__inner">
-            <div class="footer__contacts"><span>+7 (981) 857-46-24</span></div>
-            <div class="footer__contacts">
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__contacts">
+            <div class=""><span>+7 (981) 857-46-24</span></div>
+            <div class="">
               г. Санкт-петербург, ул. Большая Конюшенная, <span> 19</span>
             </div>
-            <div class="footer__company">ИП Королёва А.А.</div>
           </div>
+          <div class="footer__company">ИП Королёва А.А.</div>
         </div>
-      </footer>
-    </main>
+      </div>
+    </footer>
   </body>
 </html>
