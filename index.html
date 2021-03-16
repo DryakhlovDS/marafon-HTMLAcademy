@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MarafonHTML</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&amp;display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -16,7 +20,7 @@
             <a href="#home">scandi</a>
           </div>
           <nav class="nav">
-            <div class="menu active">
+            <div class="menu">
               <div class="menu__icon"></div>
               <span>Menu</span>
             </div>
@@ -28,7 +32,7 @@
               <li class="nav__link"><a href="#reviews">Отзывы клиентов</a></li>
               <li class="nav__link"><a href="#callback">Оставить заявку</a></li>
               <li class="nav__link">
-                <a href="#noscroll"><span>+7 (981) 857-46-24</span></a>
+                <a href="tel:+79818574624"><span>+7 (981) 857-46-24</span></a>
               </li>
             </ul>
           </nav>
@@ -36,13 +40,14 @@
       </div>
     </header>
     <main>
+      <h1>Scandi</h1>
       <section class="intro" id="home">
         <div class="container">
           <div class="intro__inner">
             <h2 class="intro__title">Поможем сделать вашу квартиру уютнее</h2>
             <p class="intro__text">
-              Подбираем текстиль, мебель и аксессуары под Ваш интерьер, находим
-              магазины и помогаем организовать доставку.
+              Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим
+              магазины и&nbsp;помогаем организовать доставку.
             </p>
             <a href="#callback" target="_blank" class="intro__btn">
               <span>Оставить заявку</span>
@@ -97,48 +102,56 @@
           <div class="gallery">
             <h3 class="gallery__title">Галерея</h3>
             <div class="gallery__item">
-              <img src="img/work-1.png" alt="Спальня" />
-              <div class="gallery__description">
-                <h4 class="gallery__name">Квартира-студия 30 кв.м.</h4>
-                <p class="gallery__text">
-                  В квартире были светлые стены и тёплые цвета. Мы
-                  сконцентрировались на отсылках к природе и сделали ребятам
-                  уютный интерьер, отсылающий к виллам островов Бали.
-                </p>
-              </div>
+              <figure>
+                <img src="img/work-1.png" alt="Спальня" />
+                <figcaption class="gallery__description">
+                  <h4 class="gallery__name">Квартира-студия 30&nbsp;кв.м.</h4>
+                  <p class="gallery__text">
+                    В квартире были светлые стены и тёплые цвета. Мы
+                    сконцентрировались на отсылках к природе и сделали ребятам
+                    уютный интерьер, отсылающий к виллам островов Бали.
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="gallery__item large">
+              <figure>
+                <img src="img/work-2.png" alt="Кухня" />
+                <figcaption class="gallery__description">
+                  <h4 class="gallery__name">Кухня 20&nbsp;кв.м.</h4>
+                  <p class="gallery__text">
+                    В квартире были светлые стены и тёплые цвета. Мы
+                    сконцентрировались на отсылках к природе и сделали ребятам
+                    уютный интерьер, отсылающий к виллам островов Бали.
+                  </p>
+                </figcaption>
+              </figure>
             </div>
             <div class="gallery__item">
-              <img src="img/work-2.png" alt="Кухня" />
-              <div class="gallery__description">
-                <h4 class="gallery__name">Кухня 20 кв.м.</h4>
-                <p class="gallery__text">
-                  В квартире были светлые стены и тёплые цвета. Мы
-                  сконцентрировались на отсылках к природе и сделали ребятам
-                  уютный интерьер, отсылающий к виллам островов Бали.
-                </p>
-              </div>
+              <figure>
+                <img src="img/work-3.png" alt="Уютный угол" />
+                <figcaption class="gallery__description">
+                  <h4 class="gallery__name">Гостинная 15&nbsp;кв.м.</h4>
+                  <p class="gallery__text">
+                    В квартире были светлые стены и тёплые цвета. Мы
+                    сконцентрировались на отсылках к природе и сделали ребятам
+                    уютный интерьер, отсылающий к виллам островов Бали.
+                  </p>
+                </figcaption>
+              </figure>
             </div>
             <div class="gallery__item">
-              <img src="img/work-3.png" alt="Уютный угол" />
-              <div class="gallery__description">
-                <h4 class="gallery__name">Гостинная 15 кв.м.</h4>
-                <p class="gallery__text">
-                  В квартире были светлые стены и тёплые цвета. Мы
-                  сконцентрировались на отсылках к природе и сделали ребятам
-                  уютный интерьер, отсылающий к виллам островов Бали.
-                </p>
-              </div>
-            </div>
-            <div class="gallery__item">
-              <img src="img/work-4.png" alt="Ванная комната" />
-              <div class="gallery__description">
-                <h4 class="gallery__name">Ванная</h4>
-                <p class="gallery__text">
-                  В квартире были светлые стены и тёплые цвета. Мы
-                  сконцентрировались на отсылках к природе и сделали ребятам
-                  уютный интерьер, отсылающий к виллам островов Бали.
-                </p>
-              </div>
+              <figure>
+                <img src="img/work-4.png" alt="Ванная комната" />
+                <figcaption class="gallery__description">
+                  <h4 class="gallery__name">Ванная</h4>
+                  <p class="gallery__text">
+                    В квартире были светлые стены и тёплые цвета. Мы
+                    сконцентрировались на отсылках к природе и сделали ребятам
+                    уютный интерьер, отсылающий к виллам островов Бали.
+                  </p>
+                </figcaption>
+              </figure>
             </div>
           </div>
           <div class="works__more">
@@ -233,8 +246,8 @@
                   </p>
                   <p>
                     Работа шла быстро, было очень приятно общаться и
-                    взаимодествовайть с сотрудниками. Не ожидала, что это будет
-                    так легко!
+                    взаимодествовайть с&nbsp;сотрудниками. Не ожидала, что это
+                    будет так легко!
                   </p>
                   <p>Буду советовать и своим друзьям к вам обращаться!»</p>
                   <span class="reviews__author">Анна Беловская</span>
@@ -259,8 +272,8 @@
                 оставить заявку
               </h2>
               <p class="callback__description">
-                Оставьте свои контакты. Менеджер перезвонит в удобное вам время
-                и ответит на все вопросы.
+                Оставьте свои контакты. Менеджер перезвонит в&nbsp;удобное вам
+                время и ответит на все вопросы.
               </p>
               <form name="callback">
                 <fieldset>

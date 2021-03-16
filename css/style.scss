@@ -6,59 +6,33 @@
 
 :root {
   --color-text: #533738;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: local("Montserrat Light"), local("Montserrat-Light"),
-    url("../fonts/montserratlight.woff2") format("woff2"),
-    url("../fonts/montserratlight.woff") format("woff"),
-    url("../fonts/montserratlight.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: local("Montserrat"), local("Montserrat-Regular"),
-    url("../fonts/montserrat.woff2") format("woff2"),
-    url("../fonts/montserrat.woff") format("woff"),
-    url("../fonts/montserrat.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: local("Montserrat Bold"), local("Montserrat-Bold"),
-    url("../fonts/montserratbold.woff2") format("woff2"),
-    url("../fonts/montserratbold.woff") format("woff"),
-    url("../fonts/montserratbold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
+  --color-bg: #efe6e4;
 }
 
 body {
   position: relative;
   width: 100%;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", "Arial", "Helvetica",sans-serif;
   color: var(--color-text);
   overflow-x: hidden;
+}
+
+h1{
+position: absolute;
+top: 0;
+left: 0;
+transform: translateX(-100%);
 }
 
 p {
   font-size: 18px;
   line-height: 30px;
-  letter-spacing: 1px;
+  
 
   @media screen and (max-width: 425px) {
     line-height: normal;
     font-size: 16px;
   }
-}
-
-span {
-  font-weight: 300;
 }
 
 .section {
@@ -76,7 +50,6 @@ span {
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 40px;
-    letter-spacing: 2px;
     color: var(--color-);
 
     @media screen and (max-width: 425px) {
@@ -122,6 +95,7 @@ span {
     & a {
       text-decoration: none;
       color: inherit;
+      font-weight: 500;
     }
   }
 }
@@ -232,7 +206,7 @@ span {
 
   &__link {
     position: relative;
-    text-align: center;
+    text-align: left;
     margin-bottom: 10px;
 
     & a {
@@ -241,6 +215,8 @@ span {
       color: var(--color-text);
       transition: color 0.2s linear;
       --color-link: #cc8b86;
+      // text-size-adjust: 100%;
+      font-weight: 400;
 
       &::after {
         content: "";
@@ -321,14 +297,14 @@ span {
     width: 100%;
     font-size: 50px;
     line-height: 62px;
-    letter-spacing: 2px;
     font-weight: normal;
-    margin: 24px 0;
-    transform: scaleX(1.2) translateX(8%);
+    margin: 10px 0;
+    
 
     @media screen and (max-width: 768px) {
       font-size: 30px;
       line-height: 40px;
+      transform: scaleX(1.2) translateX(8%);
     }
 
     @media screen and (max-width: 425px) {
@@ -345,7 +321,7 @@ span {
     position: relative;
     width: 310px;
     height: 75px;
-    margin-top: 20px;
+    margin-top: 24px;
     border: none;
     text-align: center;
     font-family: "Montserrat", sans-serif;
@@ -386,10 +362,12 @@ span {
     & > span {
       position: relative;
       display: block;
-      width: 160px;
+      width: 200px;
       height: 30px;
       margin: 25px auto;
       font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
       z-index: 2;
     }
 
@@ -484,12 +462,13 @@ span {
 
 .works {
   &__more {
-    padding: 40px 0 65px;
+    padding: 40px 0 60px;
     text-align: center;
     font-size: 30px;
     font-weight: 400;
 
     & a {
+      font-weight: 500;
       text-decoration: none;
       color: inherit;
 
@@ -503,6 +482,7 @@ span {
 .gallery {
   display: flex;
   flex-wrap: wrap;
+  padding: 2px 0;
   width: 100%;
   gap: 30px 20px;
 
@@ -513,14 +493,23 @@ span {
   &__item {
     position: relative;
     width: auto;
-    min-width: 450px;
+    // min-width: 450px;
     height: 450px;
     overflow: hidden;
     flex: 1 1 auto;
 
+    @media screen and (max-width: 1220px) {
+      width: 48%;
+      flex-grow: 0;
+    }
+
     @media screen and (max-width: 768px) {
       width: 100%;
       min-width: 100%;
+    }
+
+    & figure{
+      height: 100%;
     }
 
     & img {
@@ -535,7 +524,7 @@ span {
 
   &__description {
     position: absolute;
-    padding: 40px;
+    padding: 30px;
     width: 100%;
     height: 100%;
     top: 0;
@@ -553,20 +542,33 @@ span {
     &:hover {
       opacity: 0.8;
     }
+
+    @media screen and (max-width: 768px) {
+      opacity: 0.8;
+      height: auto;
+      top: auto;
+      bottom: 0;
+    }
   }
 
   &__name {
-    width: 60%;
+    width: 90%;
     margin-bottom: 25px;
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 500;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 0;
+    }
   }
 
   &__text {
     padding: 5px;
     text-align: left;
-    font-weight: 300;
-    transform: scale(1.05) translateX(2%);
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 }
 
@@ -677,7 +679,7 @@ span {
 
   &__text {
     & p {
-      margin-bottom: 40px;
+      margin-bottom: 30px;
 
       @media screen and (max-width: 425px) {
         margin-bottom: 10px;
@@ -691,6 +693,7 @@ span {
 
   &__author {
     text-transform: uppercase;
+    font-weight: 500;
     letter-spacing: 1px;
   }
 
@@ -813,7 +816,6 @@ span {
     margin-top: -20px;
     font-size: 18px;
     line-height: 30px;
-    letter-spacing: 1px;
     opacity: 0.6;
   }
 
@@ -869,7 +871,7 @@ form[name="callback"] {
     font-size: 18px;
     line-height: 30px;
     font-weight: 300;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     transform: translateY(0);
     transition: transform 0.2s ease-in;
   }
@@ -878,6 +880,7 @@ form[name="callback"] {
     @extend .intro__btn;
     font-size: 20px;
     cursor: pointer;
+    color:#533738;
 
     & span {
       position: relative;
@@ -887,6 +890,8 @@ form[name="callback"] {
 }
 
 .footer {
+  background-color: var(--color-bg);
+
   &__inner {
     display: flex;
     // flex-wrap: wrap;
