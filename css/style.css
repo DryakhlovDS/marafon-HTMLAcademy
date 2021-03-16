@@ -733,8 +733,15 @@ p {
   margin-top: 10px;
   padding-bottom: 10px;
 }
+/* line 606, style.scss */
+.card:hover {
+  outline: 1px solid #533738;
+  outline-offset: 10px;
+  -webkit-transform: translate(-5px, -5px);
+          transform: translate(-5px, -5px);
+}
 
-/* line 607, style.scss */
+/* line 614, style.scss */
 .make {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -746,7 +753,7 @@ p {
           justify-content: center;
   padding-bottom: 70px;
 }
-/* line 613, style.scss */
+/* line 620, style.scss */
 .make__title {
   width: 100%;
   font-size: 40px;
@@ -756,12 +763,12 @@ p {
   margin: 30px auto;
 }
 @media screen and (max-width: 425px) {
-  /* line 613, style.scss */
+  /* line 620, style.scss */
   .make__title {
     font-size: 30px;
   }
 }
-/* line 626, style.scss */
+/* line 633, style.scss */
 .make__part {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -772,14 +779,14 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
 }
-/* line 632, style.scss */
+/* line 639, style.scss */
 .make__step {
   width: 90%;
   max-width: 300px;
   margin-top: 10px;
   text-align: center;
 }
-/* line 638, style.scss */
+/* line 645, style.scss */
 .make__step span {
   display: block;
   width: 70px;
@@ -791,12 +798,12 @@ p {
   color: #ffffff;
   font-size: 30px;
 }
-/* line 650, style.scss */
+/* line 657, style.scss */
 .make__step p {
   padding: 20px 10px 10px;
 }
 
-/* line 657, style.scss */
+/* line 664, style.scss */
 .reviews__inner {
   width: 100%;
   max-width: 1036px;
@@ -806,7 +813,7 @@ p {
   display: flex;
   padding-bottom: 65px;
 }
-/* line 665, style.scss */
+/* line 672, style.scss */
 .reviews__item {
   position: relative;
   width: 100%;
@@ -822,7 +829,7 @@ p {
           justify-content: center;
 }
 @media screen and (max-width: 768px) {
-  /* line 665, style.scss */
+  /* line 672, style.scss */
   .reviews__item {
     margin: 0 auto;
     width: 80%;
@@ -830,55 +837,55 @@ p {
         flex-wrap: wrap;
   }
 }
-/* line 681, style.scss */
+/* line 688, style.scss */
 .reviews__text p {
   margin-bottom: 30px;
 }
 @media screen and (max-width: 425px) {
-  /* line 681, style.scss */
+  /* line 688, style.scss */
   .reviews__text p {
     margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 680, style.scss */
+  /* line 687, style.scss */
   .reviews__text {
     width: 100%;
   }
 }
-/* line 694, style.scss */
+/* line 701, style.scss */
 .reviews__author {
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1px;
 }
-/* line 700, style.scss */
+/* line 707, style.scss */
 .reviews__image {
   min-width: calc(50% - 10px);
 }
-/* line 703, style.scss */
+/* line 710, style.scss */
 .reviews__image img {
   display: block;
   width: 100%;
 }
-/* line 708, style.scss */
+/* line 715, style.scss */
 .reviews__image img + img {
   margin-top: 30px;
 }
 @media screen and (max-width: 768px) {
-  /* line 700, style.scss */
+  /* line 707, style.scss */
   .reviews__image {
     width: 100%;
   }
 }
 @media screen and (max-width: 425px) {
-  /* line 700, style.scss */
+  /* line 707, style.scss */
   .reviews__image {
     display: none;
   }
 }
 
-/* line 722, style.scss */
+/* line 729, style.scss */
 .prev,
 .next {
   position: relative;
@@ -903,14 +910,14 @@ p {
           align-items: center;
 }
 @media screen and (max-width: 768px) {
-  /* line 722, style.scss */
+  /* line 729, style.scss */
   .prev,
   .next {
     width: 10vw;
     height: 10vw;
   }
 }
-/* line 742, style.scss */
+/* line 749, style.scss */
 .prev span,
 .next span {
   position: absolute;
@@ -927,7 +934,7 @@ p {
   transition: opacity 0.1s linear, transform 0.3s ease-out;
   transition: opacity 0.1s linear, transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
-/* line 753, style.scss */
+/* line 760, style.scss */
 .prev span::after,
 .next span::after {
   content: "";
@@ -939,13 +946,13 @@ p {
   border-bottom-width: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 742, style.scss */
+  /* line 749, style.scss */
   .prev span,
   .next span {
     display: none;
   }
 }
-/* line 768, style.scss */
+/* line 775, style.scss */
 .prev:hover,
 .next:hover {
   -webkit-transform: scale(1.05);
@@ -953,7 +960,7 @@ p {
   -webkit-box-shadow: 3px 5px 10px #533738;
           box-shadow: 3px 5px 10px #533738;
 }
-/* line 772, style.scss */
+/* line 779, style.scss */
 .prev:hover span,
 .next:hover span {
   opacity: 0.85;
@@ -961,25 +968,25 @@ p {
           transform: translateY(0);
 }
 
-/* line 779, style.scss */
+/* line 786, style.scss */
 .prev img {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-/* line 783, style.scss */
+/* line 790, style.scss */
 .slider {
   margin: 0 auto;
   padding: 0 30px;
 }
 
-/* line 788, style.scss */
+/* line 795, style.scss */
 .callback {
   --color-bg: #8d7370;
   --color-text: #ffffff;
   padding-top: 0;
 }
-/* line 793, style.scss */
+/* line 800, style.scss */
 .callback__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -990,13 +997,13 @@ p {
   width: 100%;
 }
 @media screen and (max-width: 1023px) {
-  /* line 793, style.scss */
+  /* line 800, style.scss */
   .callback__inner {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
-/* line 804, style.scss */
+/* line 811, style.scss */
 .callback__form {
   padding: 50px 20px 20px 82px;
   width: 100%;
@@ -1005,34 +1012,34 @@ p {
       flex-shrink: 1;
 }
 @media screen and (max-width: 1023px) {
-  /* line 804, style.scss */
+  /* line 811, style.scss */
   .callback__form {
     padding: 50px 20px 20px 20px;
   }
 }
-/* line 815, style.scss */
+/* line 822, style.scss */
 .callback__description {
   margin-top: -20px;
   font-size: 18px;
   line-height: 30px;
   opacity: 0.6;
 }
-/* line 822, style.scss */
+/* line 829, style.scss */
 .callback__map {
   width: 100%;
   max-width: 590px;
 }
-/* line 829, style.scss */
+/* line 836, style.scss */
 .callback__map img {
   width: 100%;
   display: block;
 }
 
-/* line 836, style.scss */
+/* line 843, style.scss */
 form[name="callback"] {
   padding-top: 30px;
 }
-/* line 839, style.scss */
+/* line 846, style.scss */
 form[name="callback"] fieldset {
   position: relative;
   width: 100%;
@@ -1040,7 +1047,7 @@ form[name="callback"] fieldset {
   border: none;
   color: #f6ede9;
 }
-/* line 847, style.scss */
+/* line 854, style.scss */
 form[name="callback"] input {
   width: 100%;
   height: 45px;
@@ -1052,17 +1059,17 @@ form[name="callback"] input {
   background-color: transparent;
   color: inherit;
 }
-/* line 858, style.scss */
+/* line 865, style.scss */
 form[name="callback"] input:focus {
   outline: none;
   border-bottom-color: #cc8b86;
 }
-/* line 861, style.scss */
+/* line 868, style.scss */
 form[name="callback"] input:focus + label {
   -webkit-transform: translate(-8%, -28px) scale(0.85);
           transform: translate(-8%, -28px) scale(0.85);
 }
-/* line 867, style.scss */
+/* line 874, style.scss */
 form[name="callback"] label {
   position: absolute;
   top: 15px;
@@ -1078,23 +1085,23 @@ form[name="callback"] label {
   transition: transform 0.2s ease-in;
   transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
 }
-/* line 879, style.scss */
+/* line 886, style.scss */
 form[name="callback"] button {
   font-size: 20px;
   cursor: pointer;
   color: #533738;
 }
-/* line 885, style.scss */
+/* line 892, style.scss */
 form[name="callback"] button span {
   position: relative;
   z-index: 1;
 }
 
-/* line 892, style.scss */
+/* line 899, style.scss */
 .footer {
   background-color: var(--color-bg);
 }
-/* line 895, style.scss */
+/* line 902, style.scss */
 .footer__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1105,13 +1112,13 @@ form[name="callback"] button span {
   line-height: 30px;
 }
 @media screen and (max-width: 425px) {
-  /* line 895, style.scss */
+  /* line 902, style.scss */
   .footer__inner {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
-/* line 908, style.scss */
+/* line 915, style.scss */
 .footer__contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1120,11 +1127,11 @@ form[name="callback"] button span {
       flex-wrap: wrap;
   gap: 20px 40px;
 }
-/* line 913, style.scss */
+/* line 920, style.scss */
 .footer__contacts span {
   font-weight: 300;
 }
-/* line 917, style.scss */
+/* line 924, style.scss */
 .footer__company {
   min-width: 150px;
   margin-left: auto;
