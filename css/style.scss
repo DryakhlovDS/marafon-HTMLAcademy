@@ -12,22 +12,21 @@
 body {
   position: relative;
   width: 100%;
-  font-family: "Montserrat", "Arial", "Helvetica",sans-serif;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   color: var(--color-text);
   overflow-x: hidden;
 }
 
-h1{
-position: absolute;
-top: 0;
-left: 0;
-transform: translateX(-100%);
+h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
 }
 
 p {
   font-size: 18px;
   line-height: 30px;
-  
 
   @media screen and (max-width: 425px) {
     line-height: normal;
@@ -299,7 +298,6 @@ p {
     line-height: 62px;
     font-weight: normal;
     margin: 10px 0;
-    
 
     @media screen and (max-width: 768px) {
       font-size: 30px;
@@ -420,6 +418,7 @@ p {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    list-style: none;
   }
 
   &__item {
@@ -508,7 +507,7 @@ p {
       min-width: 100%;
     }
 
-    & figure{
+    & figure {
       height: 100%;
     }
 
@@ -603,11 +602,10 @@ p {
     padding-bottom: 10px;
   }
 
-  &:hover{
+  &:hover {
     outline: 1px solid #533738;
     outline-offset: 10px;
     transform: translate(-5px, -5px);
-    
   }
 }
 
@@ -740,6 +738,11 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
 
   @media screen and (max-width: 768px) {
     width: 10vw;
@@ -887,7 +890,7 @@ form[name="callback"] {
     @extend .intro__btn;
     font-size: 20px;
     cursor: pointer;
-    color:#533738;
+    color: #533738;
 
     & span {
       position: relative;
